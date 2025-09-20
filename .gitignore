@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+venv/
+
+# Executáveis
+*.exe
+
+# macOS
+.DS_Store

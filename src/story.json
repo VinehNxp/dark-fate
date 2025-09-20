@@ -1,0 +1,153 @@
+{
+  "intro_life": {
+    "text": "Você é um jovem pesquisador de fenômenos raros, sempre fascinado pelo desconhecido.\nSua vida foi marcada por dúvidas e desaprovação: colegas e superiores nunca acreditaram em suas descobertas.\nApesar disso, você sabe que seu objetivo é crucial para sua carreira: encontrar o Artefato da Floresta, algo que pode revolucionar sua profissão.",
+    "options": [
+      {"text": "Seguir para a aula de pesquisas", "next": "intro_class"}
+    ]
+  },
+  "intro_class": {
+    "text": "Você está na aula de pesquisas de fenômenos raros, observando experimentos e tomando notas detalhadas.\nSeus colegas sussurram que suas ideias são loucura, mas você sabe que está no caminho certo.",
+    "options": [
+      {"text": "Prestar atenção à aula", "next": "professor_event"},
+      {"text": "Continuar suas próprias anotações secretas", "next": "professor_event"}
+    ]
+  },
+  "professor_event": {
+    "text": "O professor anuncia um experimento confidencial, alegando que os alunos podem observar algo extraordinário.\nAlguns colegas ficam empolgados, outros ridicularizam, mas você percebe que isso pode ser a oportunidade de provar seu valor.",
+    "options": [
+      {"text": "Se empolgar com os outros alunos", "next": "official_mission"},
+      {"text": "Apenas observe", "next": "official_mission"}
+    ]
+  },
+  "official_mission": {
+    "text": "Com todos empolgados, o professor inicia os preparativos.\nAssim que bate no relógio 16h, o professor pede para todos seguirem até a circular privada da faculdade.",
+    "options": [
+      {"text": "Seguir", "next": "circular"}
+    ]
+  },
+  "circular": {
+    "text": "Todos estando na circular, o professor faz a chamada para conferir se todos estavam presentes. Após isso, iniciam o projeto da escola.\nSeguindo a estrada, entram em uma rua mais estreita, estrada de terra, cercada de árvores, cheiro da mata, algo bem isolado, quase anoitecendo...",
+    "options": [
+      {"text": "Descansar", "next": "forest_entry"}
+    ]
+  },
+  "forest_entry": {
+    "text": "Você finalmente chega à entrada da floresta. Já são 19h30, o vento sussurra entre as árvores, e você percebe que a verdadeira aventura está prestes a começar.\nO professor guia-os pela entrada da floresta: \"Todos aqui, vamos ficar juntos, temos lugares perigosos, evitem se afastar do grupo...\"\nPrecisamos encontrar um fóssil chamado Kraex, de um animal selvagem. Há grandes chances de achá-lo em pedras na superfície, mas dificilmente será fácil. Ninguém nunca encontrou, pelo menos não nos jornais... Vamos.",
+    "options": [
+      {"text": "Seguir pela trilha", "next": "forest_trail"}
+    ]
+  },
+  "forest_trail": {
+    "text": "A trilha é estreita e escura, corujas cantam, e um sentimento gelado aumenta. Todos estavam cautelosos e amedrontados, mas o professor sempre encorajando-os...",
+    "options": [
+      {"text": "Se acalmar", "next": "continuar_andando"},
+      {"text": "Acelerar o passo", "next": "acelerando"}
+    ]
+  },
+  "continuar_andando": {
+    "text": "Você se acalma, o sentimento gelado vai embora, mas o frio persiste...\nUma neblina densa aparece sem aviso, dificultando ver os colegas.\nAo se acalmar, desacelerou seus passos e ficou longe dos demais...",
+    "options": [
+      {"text": "Apressar o passo", "next": "acelerando"},
+      {"text": "Gritar para o pessoal", "next": "gritou"}
+    ]
+  },
+  "acelerando": {
+    "text": "Você aperta os passos, chegando ao grupo.\nO professor para diante de dois caminhos: o da esquerda é seguro, o da direita tem aviso de dificuldade e possíveis perigos.\nO professor escolhe a esquerda.",
+    "options": [
+      {"text": "Seguir o professor e o grupo", "next": "seguir"},
+      {
+        "text": "Se afastar do grupo e seguir à direita",
+        "next": "afastar_grupo",
+        "warning": "Seu grupo desapareceu na floresta...",
+        "sound": "consequenc.mp3"
+      }
+    ]
+  },
+  "gritou": {
+    "text": "Você grita para todos. Eles param e você consegue alcançá-los.\nApós 10 minutos de caminhada, o professor para diante de dois caminhos: esquerda segura, direita perigosa.\nO professor decide ir pela esquerda.",
+    "options": [
+      {"text": "Seguir o professor e o grupo", "next": "seguir"},
+      {
+        "text": "Se afastar do grupo e seguir à direita",
+        "next": "afastar_grupo"
+      }
+    ]
+  },
+  "seguir": {
+    "text": "Você segue pelo caminho da esquerda. O ambiente é escuro, mas seguro.\nDe repente, uma pedra estranha chama sua atenção, com inscrições antigas, quase desenhos deixados por alguém.",
+    "options": [
+      {"text": "Investigar a pedra", "next": "pedra_event"},
+      {"text": "Ignorar e continuar com o grupo", "next": "continuar_grupo"}
+    ]
+  },
+  "afastar_grupo": {
+    "text": "A floresta fica mais densa, o vento sopra forte e o cheiro da terra molhada aumenta.\nO som do grupo desaparece, e cada passo parece ecoar no silêncio pesado. Algo se move entre as árvores, mas você não consegue ver direito.",
+    "options": [
+      {
+        "text": "Investigar o movimento nas árvores",
+        "next": "arvore_event"
+      },
+      {
+        "text": "Continuar em frente sem olhar para trás",
+        "next": "floresta_perigosa",
+        "warning": "Seguir sozinho pode ter perigos desconhecidos!",
+        "sound": "consequenc.mp3"
+      }
+    ]
+  },
+  "pedra_event": {
+    "text": "Ao investigar a pedra, você percebe inscrições antigas possivelmente relacionadas ao Kraex.\nO professor e o grupo continuam andando, sem perceber sua descoberta.",
+    "options": [
+      {"text": "Anotar rapidamente e correr atrás do grupo", "next": "continuar_grupo"},
+      {"text": "Ignorar o grupo e estudar melhor", "next": "estudo_pedra"}
+    ]
+  },
+  "continuar_grupo": {
+    "text": "Você retorna ao grupo. A trilha continua sombria, mas todos se sentem mais seguros.\nAlgo se mexe na beira do caminho, talvez um animal, talvez algo mais...",
+    "options": [
+      {"text": "Investigar o barulho", "next": "barulho_event"},
+      {"text": "Ignorar e continuar", "next": "final_floresta_seguro"}
+    ]
+  },
+  "estudo_pedra": {
+    "text": "Enquanto estuda a pedra, a neblina aumenta e você se perde do grupo.\nAs sombras se tornam densas e você sente que algo o observa.\nSua coragem é testada ao decidir seguir sozinho.",
+    "options": [
+      {"text": "Continuar explorando sozinho", "next": "floresta_perigosa"},
+      {"text": "Tentar voltar para o grupo", "next": "continuar_grupo"}
+    ]
+  },
+  "arvore_event": {
+    "text": "Você percebe um pequeno animal selvagem entre as árvores.\nOlhando melhor, vê um símbolo antigo no tronco, possivelmente relacionado ao Kraex.",
+    "options": [
+      {"text": "Seguir investigando os símbolos", "next": "floresta_perigosa"},
+      {"text": "Continuar andando pela trilha", "next": "floresta_perigosa"}
+    ]
+  },
+  "floresta_perigosa": {
+    "text": "A trilha fica cada vez mais difícil. Raízes expostas, pedras escorregadias e o som de galhos quebrando aumentam a tensão.\nVocê precisa escolher cada passo com cuidado.",
+    "options": [
+      {"text": "Seguir em frente com cuidado", "next": "final_floresta_arriscado"},
+      {
+        "text": "Retornar para o caminho seguro",
+        "next": "final_floresta_seguro",
+        "warning": "Essa escolha fará você perder pistas valiosas!",
+        "sound": "consequenc.mp3"
+      }
+    ]
+  },
+  "barulho_event": {
+    "text": "Ao investigar o barulho, você vê apenas um animal fugindo rapidamente.\nAlgo brilhou entre as folhas, parecia um fragmento de fóssil.",
+    "options": [
+      {"text": "Pegar o fragmento", "next": "final_floresta_arriscado"},
+      {"text": "Ignorar e continuar com o grupo", "next": "final_floresta_seguro"}
+    ]
+  },
+  "final_floresta_seguro": {
+    "text": "Seguindo o caminho seguro, você não encontra grandes descobertas, mas retorna ileso com o grupo.\nEmbora seguro, sente que perdeu a chance de algo raro. (Final Neutro)",
+    "options": []
+  },
+  "final_floresta_arriscado": {
+    "text": "Você se arrisca, explorando sozinho ou investigando detalhes que o grupo ignorou.\nNo fim, encontra fragmentos do Kraex e sinais de sua existência.\nSua coragem foi recompensada, mas os riscos foram grandes. (Final Bom Arriscado)",
+    "options": []
+  }
+}

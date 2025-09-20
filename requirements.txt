@@ -1,0 +1,7 @@
+# Bibliotecas necessárias para o jogo Dark Fate
+
+pygame==2.6.1        # Biblioteca principal de gráficos, som e eventos
+# json, sys, time, random são built-in do Python, não precisam instalar
+
+# Caso queira usar PyInstaller para gerar o .exe
+pyinstaller==5.12.0   # Ferramenta para criar executáveis a partir do script Python
