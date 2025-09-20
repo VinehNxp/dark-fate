@@ -5,8 +5,5 @@ __pycache__/
 # Ambiente virtual
 venv/
 
-# Executáveis
-*.exe
-
 # macOS
 .DS_Store
